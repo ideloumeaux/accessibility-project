@@ -1,0 +1,178 @@
+/* -------reset css------- */
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 100;
+}
+
+/* -------CSS------- */
+
+body {
+  background-color: rgb(241, 236, 214);
+}
+
+header {
+  line-height: 70px;
+  background: #242038;
+}
+
+header *{
+  text-align: center;
+  color: #fafafa;
+}
+
+main {
+  margin-top: 40px;
+  display: block;
+  padding: 0 200px 0 200px;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0 25px 0;
+}
+
+p {
+  text-align: justify;
+  line-height: 26px;
+  text-indent: 5%;
+}
+
+em {
+  letter-spacing: 0.8px;
+}
+
+img:nth-child(1n) {
+  display: block;
+  margin: 21px auto 50px auto;
+  width: 65%;
+}
+
+img:nth-child(2n) {
+  float: left;
+  margin: 0 2% 0.5% 0;
+  width: 45%;
+}
+
+h3:nth-child(1n) {
+  margin: 25px 0 28px 0;
+}
+
+section:nth-child(3n) h3 {
+  margin: 25px 0 20px 0;
+}
+
+h4 {
+  letter-spacing: 1.2;
+}
+
+h2, h3 {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.block {
+  padding: 0 70px 10px 70px;
+}
+
+.block p {
+  text-indent: 0%;
+  color: #0f0f0f;
+}
+
+.date {
+  text-align: right;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.firstComment, .secondComment {
+  display: block;
+  border-style: solid;
+  border-width: 0.5px;
+  padding: 20px
+}
+
+.firstComment {
+  margin: 0 0 25px 0;
+}
+
+strong {
+  letter-spacing: 0.5px;
+  color: #292929;
+}
+
+
+
+
+  /* -------RESPONSIVE------- */
+
+  /* @media screen and (min-width: 768px) {
+    img {
+      width: 50vw;
+    }
+  } */
+
+  @media screen and (max-width: 1024px) {
+  main {
+    padding: 0 30px 0 30px;
+  }
+
+  h2, h3 {
+    text-align: center;
+  }
+
+  p {
+    text-indent: 50px;
+    line-height: 26px;
+  }
+
+  em {
+    letter-spacing: 0.8px;
+  }
+
+  img:nth-child(1n) {
+    display: block;
+    margin: 10px auto 30px auto;
+    width: 80vw;
+  }
+
+  img:nth-child(2n) {
+    display: block
+    margin: 21px auto 0 auto;
+    float: none;
+    width: 70vw;
+  }
+
+  .block {
+    padding: 0 10px 10px 10px;
+  }
+  
+  .block p {
+    text-indent: 0%;
+  }
+  
+  .firstComment, .secondComment {
+    display: block;
+    border-style: solid;
+    border-width: 0.5px;
+    padding: 20px;
+  }
+  
+  .firstComment {
+    margin: 0 0 25px 0;
+  }
+}
